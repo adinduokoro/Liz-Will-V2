@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* Import */
+@font-face {
+  font-family: var(--fontHeader);
+  src: url("../public/font/Minister-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Constants */
+:root {
+  /* Font */
+  --fontHeader: "Minister Book", sans-serif;
+  --fontBody: "Roboto", sans-serif;
+
+  /* Color */
+  --primaryColor: #f4841f;
+  --surfaceColor: #ffffff;
+  --surfaceMutedColor: #fef9f4;
+  --surfaceDimColor: #fac89a;
+  --surfaceShadeColor: #552e0b;
+  --surfaceNeutralColor: #000000;
+
+  /* Gradient */
+  --primaryGradient: linear-gradient(180deg, #ffd194 0%, #ffffff 100%);
+
+  /* Radius */
+  --radiusSmall: 0.25rem;
+  --radiusMedium: 0.5rem;
+  --radiusLarge: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  font-family: var(--fontBody);
+  background: var(--surfaceColor);
+  color: var(--surfaceNeutralColor);
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: var(--fontHeader);
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-family: var(--fontHeader);
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-family: var(--fontHeader);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+h4 {
+  font-family: var(--fontHeader);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+p {
+  font-family: var(--fontBody);
+  line-height: 1.5rem;
+}
+
+.text-regular {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.text-large {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.button {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
 }
