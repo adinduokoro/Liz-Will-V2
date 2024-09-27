@@ -23,13 +23,13 @@ const Service = () => {
               </button>
             </div>
             <div className={styles.cards}>
-              {services.map((index, service) => (
+              {services.map((service,index) => (
                 <div className={styles.card} key={index}>
                   <div className={styles.imageContainer}>
-                    <img src="" alt="" />
+                    <img src={service.image} alt="" />
                   </div>
                   <div className={styles.headerContainer}>
-                    <h3>{}</h3>
+                    <h4>{service.title}</h4>
                   </div>
                 </div>
               ))}
