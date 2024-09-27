@@ -1,0 +1,30 @@
+.serviceContent {
+  display: flex;
+  padding: 4rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.5rem;
+  align-self: stretch;
+}
+
+.serviceContent h2 {
+  width: 22rem;
+}
+
+.serviceInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.description{
+  display: flex;
+width: 22rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.5rem;
+}
+
+

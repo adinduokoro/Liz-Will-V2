@@ -43,33 +43,58 @@ body {
   color: var(--surfaceNeutralColor);
 }
 
+.container {
+  border: 2px solid red;
+  max-width: 70rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 0 4%;
+}
+
 h1 {
   font-family: var(--fontHeader);
   font-size: 3.5rem;
   line-height: 4rem;
+  font-weight: 500;
 }
 
 h2 {
   font-family: var(--fontHeader);
   font-size: 2.25rem;
   line-height: 3rem;
+  font-weight: 500;
 }
 
 h3 {
   font-family: var(--fontHeader);
   font-size: 1.5rem;
   line-height: 2.5rem;
+  font-weight: 500;
 }
 
 h4 {
   font-family: var(--fontHeader);
   font-size: 1.125rem;
   line-height: 1.5rem;
+  font-weight: 500;
 }
 
 p {
   font-family: var(--fontBody);
   line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  all: unset;
+  display: inline;
+  cursor: pointer;
 }
 
 .text-regular {
@@ -84,8 +109,43 @@ p {
   font-weight: 400;
 }
 
-.button {
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.button-text {
+  color: var(--surfaceNeutralColor);
+  font-family: var(--fontBody);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 1.5rem;
+  white-space: nowrap;
+}
+
+.primary-button {
+  display: flex;
+  width: 9rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--Primary, #f4841f);
+  color: var(--surfaceColor);
+}
+
+.secondary-button {
+  display: inline-flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radiusSmall);
+  border: 2px solid var(--surfaceNeutralColor);
+  background: var(--surfaceColor);
 }

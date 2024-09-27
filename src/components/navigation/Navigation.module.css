@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 0 4%;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding: 1rem 0;
+}
+
+.logoContainer {
+  display: flex;
+  width: 5rem;
+  height: 3.875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.menuIconContainer {
+  display: flex;
+  height: 2.1875rem;
+  padding: 0.5rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}

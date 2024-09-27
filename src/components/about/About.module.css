@@ -1,0 +1,87 @@
+
+.aboutContent {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 4rem 0;
+}
+
+.title {
+  display: flex;
+  max-width: 28rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.aboutInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.navLinks {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.navButton {
+  display: flex;
+  width: 8.3125rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid var(--surfaceNeutralColor);
+  background: var(--surfaceColor);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 1.69rem;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+}
+
+.learnMore {
+  color: var(--surfaceShadeColor);
+}
+
+.slideshow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
+  flex: 1 0 0;
+}
+
+.preview {
+  height: 16.125rem;
+  align-self: stretch;
+  border: 1px solid var(--Neutral, #1b0f03);
+  background: #d9d9d9;
+}
+
+.slideButtons {
+  display: flex;
+  padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.slideIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}

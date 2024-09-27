@@ -1,0 +1,11 @@
+.strap{
+  background-color: var(--primaryColor);
+  color: var(--surfaceColor);
+}
+
+.strapContent{
+padding: 2rem 0;
+display: flex;
+justify-content: center;
+text-align: center;
+}
