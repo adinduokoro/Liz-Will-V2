@@ -6,5 +6,6 @@ export { default as About } from "./about/About";
 export { default as Quality } from "./quality/Quality";
 export { default as Service } from "./service/Service";
 export { default as Featured } from "./featured/Featured";
-export { default as Cta } from "./cta/Cta";
+export { default as CtaOne } from "./cta/ctaOne/CtaOne";
+export { default as CtaTwo } from "./cta/ctaTwo/CtaTwo";
 export { default as Footer } from "./footer/Footer";

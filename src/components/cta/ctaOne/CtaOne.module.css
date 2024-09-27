@@ -1,0 +1,12 @@
+.ctaOne {
+  background-color: var(--surfaceColor);
+}
+
+.ctaOneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  padding: 4rem 0;
+}

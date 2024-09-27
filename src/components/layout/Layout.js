@@ -8,7 +8,7 @@ const Layout = () => {
     <div className={styles.layout}>
       <Navigation />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

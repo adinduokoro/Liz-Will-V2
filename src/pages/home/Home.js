@@ -1,5 +1,14 @@
-import React from 'react'
-import { About, Cta, Featured, Hero, Quality, Service, Strap } from '../../components'
+import React from "react";
+import {
+  About,
+  CtaOne,
+  CtaTwo,
+  Featured,
+  Hero,
+  Quality,
+  Service,
+  Strap,
+} from "../../components";
 
 const Home = () => {
   return (
@@ -10,9 +19,10 @@ const Home = () => {
       <Quality />
       <Service />
       <Featured />
-      <Cta />
+      <CtaOne />
+      <CtaTwo />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
