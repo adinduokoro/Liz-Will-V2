@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 import { navItems } from "./data";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo-light.svg";
 import menuIcon from "../../assets/menuIcon.svg";
 
 const Navigation = () => {

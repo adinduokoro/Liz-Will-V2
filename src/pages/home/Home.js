@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Home.module.css"
+import styles from "./Home.module.css";
 
 import {
   About,
@@ -11,6 +11,8 @@ import {
   Service,
   Strap,
 } from "../../components";
+import { CtaBg } from "../../assets/backgrounds";
+import background from "../../assets/cta-bg.jpg";
 
 const Home = () => {
   return (
@@ -18,12 +20,17 @@ const Home = () => {
       <Hero />
       <Strap />
       <About />
-      <Quality />
-      <Service />
+      <div className={styles.qualityAndService}>
+          <Quality />
+          <Service />
+      </div>
       <Featured />
-      <div className={styles.ctaBg}>
-      <CtaOne />
-      <CtaTwo />
+      <div className={styles.cta}>
+        <div className={styles.ctaBg}>
+          <CtaBg img={background} />
+        </div>
+        <CtaOne />
+        <CtaTwo />
       </div>
     </div>
   );

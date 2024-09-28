@@ -1,8 +1,11 @@
-.ctaTwo{
-  background-color: var(--surfaceDimColor);
 
+.ctaBg{
+  position: relative;
 }
 
+.ctaBg img{
+  display: none;
+}
 .ctaTwoContent{
   display: flex;
 padding: 4rem 0;
@@ -10,6 +13,7 @@ flex-direction: column;
 align-items: center;
 gap: 3.5rem;
 align-self: stretch;
+text-align: center;
 }
 
 .header {
@@ -18,4 +22,6 @@ flex-direction: column;
 align-items: center;
 gap: 0.5rem;
 align-self: stretch;
+color: var(--surfaceColor);
 }
+

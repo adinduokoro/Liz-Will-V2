@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 0 4%;
+
 }
 
 .headerWrapper {
@@ -23,12 +24,21 @@
   cursor: pointer;
 }
 
+.logoContainer img{
+  width: 100%;
+  height: 100%;
+}
+
 .navLinks {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
   cursor: pointer;
+}
+
+.navLinks a {
+  color: var(--surfaceColor);
 }
 
 .menuIconContainer {
@@ -39,4 +49,8 @@
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+}
+
+.menuIconContainer{
+  color: var(--surfaceColor);
 }
