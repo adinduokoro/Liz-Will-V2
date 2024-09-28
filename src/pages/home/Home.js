@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./Home.module.css"
+
 import {
   About,
   CtaOne,
@@ -19,8 +21,10 @@ const Home = () => {
       <Quality />
       <Service />
       <Featured />
+      <div className={styles.ctaBg}>
       <CtaOne />
       <CtaTwo />
+      </div>
     </div>
   );
 };

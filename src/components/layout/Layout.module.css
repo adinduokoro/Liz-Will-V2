@@ -3,5 +3,13 @@ width: 100%;
 display: flex;
 justify-content: center;
 flex-direction: column;
+position: relative;
+}
 
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 7px solid green;
+  z-index: -1;
 }
