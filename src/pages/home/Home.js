@@ -16,7 +16,7 @@ import background from "../../assets/cta-bg.jpg";
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.home}>
       <Hero />
       <Strap />
       <About />

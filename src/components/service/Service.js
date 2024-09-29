@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Service.module.css";
 import { services } from "./data";
+import { Link } from "react-router-dom";
 
 const Service = () => {
   return (
@@ -18,9 +19,11 @@ const Service = () => {
                 Mauris massa. Vestiem at nibh elementum imperdiet. Duis sagittis
                 ipsum.
               </p>
+              <Link to="services">
               <button className="button-text primary-button">
                 More Services
               </button>
+              </Link>
             </div>
             <div className={styles.cards}>
               {services.map((service,index) => (

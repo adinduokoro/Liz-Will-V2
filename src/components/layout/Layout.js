@@ -1,13 +1,22 @@
 import React from "react";
 import styles from "./Layout.module.css";
 import { Navigation, Footer } from "../../components";
-import { Outlet } from "react-router-dom";
-import { HeroBg } from "../../assets/backgrounds";
-import video from "../../assets/hero-video.mp4"
+import { Outlet, useLocation } from "react-router-dom";
+import { HeroBg, PageBg } from "../../assets/backgrounds";
+import video from "../../assets/hero-video.mp4";
 
 const Layout = () => {
+  const location = useLocation();
+
   const renderBackground = () => {
-    return <HeroBg video={video} />;
+    switch (location.pathname) {
+      case "/":
+        return <HeroBg video={video} />;
+      case "contact":
+        return <PageBg image={""} />
+      default:
+        return null
+    }
   };
 
   return (

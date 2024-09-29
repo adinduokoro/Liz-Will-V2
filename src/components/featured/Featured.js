@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Feature.module.css";
+import { Link } from "react-router-dom";
 
 const Featured = () => {
   return (
@@ -14,7 +15,9 @@ const Featured = () => {
               Our meticulous craftsmanship and keen attention to detail shine through in every project we undertake.
               </p>
             </div>
+            <Link to="portfolio">
             <button className='button-text primary-button'>View Our Portfolio</button>
+            </Link>
           </div>
         </div>
       </div>
