@@ -3,7 +3,12 @@ import styles from "./PageBg.module.css"
 
 const PageBg = ({image}) => {
   return (
-    <div>PageBg</div>
+    <div className={styles.pageBg}>
+      <div className={styles.overlay}>hello</div>
+      <div className={styles.imageContainer}>
+        <img src={image} alt='' />
+      </div>
+    </div>
   )
 }
 
