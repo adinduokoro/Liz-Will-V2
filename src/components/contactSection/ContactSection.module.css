@@ -1,7 +1,7 @@
 .contactInfo{
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 8rem;
 }
 
 .contactContent{
