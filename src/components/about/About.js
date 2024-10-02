@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./About.module.css";
 import leftArrow from "../../assets/left-arrow.svg";
 import rightArrow from "../../assets/right-arrow.svg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const navButtons = ["History", "Description", "Mission"];
@@ -13,7 +14,10 @@ const About = () => {
           <div className={styles.aboutInfo}>
             <nav className={styles.navLinks}>
               {navButtons.map((label, index) => (
-                <button key={index} className={styles.navButton}>
+                <button
+                  key={index}
+                  className={`${styles.navButton} text-large`}
+                >
                   {label}
                 </button>
               ))}
@@ -29,9 +33,11 @@ const About = () => {
                 Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
                 quis sem.
               </p>
-              <a href="#" className={styles.learnMore}>
-                Learn More
-              </a>
+              <Link to="about">
+                <button className={`${styles.learnMore} button-text`}>
+                  Learn More
+                </button>
+              </Link>
             </article>
             <div className={styles.slideshow}>
               <div

@@ -9,7 +9,7 @@ const Hero = () => {
         <div className={styles.heroContent}>
           <h1>
             Designing homes <br />
-            to perfectly match your Imagination
+            to perfectly match your <span>Imagination</span>
           </h1>
           <p className="text-large">
             General Contracting, Handyman Service, Painting & Drywall, Kitchen &

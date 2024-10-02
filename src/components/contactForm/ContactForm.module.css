@@ -1,0 +1,61 @@
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  font-family: var(--fontBody);
+}
+
+.contactForm .inputFields {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rowOne,
+.rowTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+}
+
+.contactForm input {
+  display: flex;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: var(--radiusMedium);
+  border: 2px solid var(--surfaceNeutralColor);
+}
+
+.contactForm textarea {
+  display: flex;
+  width: 100%;
+  height: 7.5rem;
+  padding: 1rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: var(--radiusMedium);
+  border: 2px solid var(--surfaceNeutralColor);
+}
+
+.contactForm button {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  border-radius: var(--radiusSmall);
+  border: 2px solid var(--surfaceNeutralColor);
+}

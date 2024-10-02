@@ -4,6 +4,10 @@ import { Navigation, Footer } from "../../components";
 import { Outlet, useLocation } from "react-router-dom";
 import { HeroBg, PageBg } from "../../assets/backgrounds";
 import video from "../../assets/hero-video.mp4";
+import aboutBg from "../../assets/backgrounds/about-background.jpg"
+import servicesBg from "../../assets/backgrounds/services-background.jpg"
+import portfolioBg from "../../assets/backgrounds/portfolio-background.jpg"
+import blogBg from "../../assets/backgrounds/blog-background.jpg"
 import contactBg from "../../assets/backgrounds/contact-background.jpg";
 
 const Layout = () => {
@@ -14,13 +18,13 @@ const Layout = () => {
       case "/":
         return <HeroBg video={video} />;
       case "/about":
-        return <PageBg image={""} />;
-      case "/service":
-        return <PageBg image={""} />;
+        return <PageBg image={aboutBg} />;
+      case "/services":
+        return <PageBg image={servicesBg} />;
       case "/portfolio":
-        return <PageBg image={""} />;
+        return <PageBg image={portfolioBg} />;
       case "/blog":
-        return <PageBg image={""} />;
+        return <PageBg image={blogBg} />;
         case "/contact":
           return <PageBg image={contactBg} />;
       default:

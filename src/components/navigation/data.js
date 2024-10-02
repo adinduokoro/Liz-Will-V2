@@ -3,6 +3,6 @@ export const navItems = [
   { text: 'About', href: 'about' },
   { text: 'Services', href: 'services' },
   { text: 'Portfolio', href: 'portfolio' },
-  { text: 'Blog', href: '#' },
+  { text: 'Blog', href: 'blog' },
   { text: 'Contact', href: 'contact' }
 ];
