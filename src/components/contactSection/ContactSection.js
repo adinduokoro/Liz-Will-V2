@@ -8,7 +8,7 @@ const ContactSection = () => {
       <div className="container">
         <div className={styles.contactContent}>
           <h2>
-            Contact Liz Will <br />
+            Liz Will <br />
             Design and Renovation
           </h2>
           <div className={styles.contactInfo}>

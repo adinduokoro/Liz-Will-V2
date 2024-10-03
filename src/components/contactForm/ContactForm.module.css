@@ -12,8 +12,7 @@
 
 .contactForm .inputFields {
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .rowOne,
@@ -58,4 +57,10 @@
   align-self: stretch;
   border-radius: var(--radiusSmall);
   border: 2px solid var(--surfaceNeutralColor);
+}
+
+@media screen and (max-width: 425px) {
+  .contactForm .inputFields {
+flex-direction: column;
+  }
 }

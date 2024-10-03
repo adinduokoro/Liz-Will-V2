@@ -38,6 +38,7 @@
 }
 
 body {
+  min-width: 320px;
   font-family: var(--fontBody);
   background: var(--surfaceColor);
   color: var(--surfaceNeutralColor);
