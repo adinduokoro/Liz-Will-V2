@@ -148,3 +148,34 @@ button {
   border: 2px solid var(--surfaceNeutralColor);
   background: var(--surfaceColor);
 }
+
+@media screen and (max-width: 896px){
+  h1 {
+    font-family: var(--fontHeader);
+    font-size: 2.25rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-family: var(--fontHeader);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-family: var(--fontHeader);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-family: var(--fontHeader);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    /* figure out what we need to do with this header */
+  }
+}

@@ -12,3 +12,10 @@
     height: 13rem;
   }
 }
+
+@media screen and (max-width: 896px) {
+  .header {
+    height: 8.5rem;
+  }
+}
+
