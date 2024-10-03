@@ -6,3 +6,9 @@
   align-self: stretch;
   color: var(--surfaceColor);
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 13rem;
+  }
+}
