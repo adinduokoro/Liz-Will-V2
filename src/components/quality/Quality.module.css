@@ -5,8 +5,7 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   align-items: flex-start;
-  gap: 2rem;
-  padding-left: 4rem;
+  padding-left: 2rem;
   scroll-behavior: smooth;
 }
 
@@ -54,3 +53,12 @@
   color: var(--surfaceNeutralColor);
 }
 
+@media screen and (max-width: 768px) {
+  .cards {
+    padding-left: 0rem;
+  }
+
+  .card{
+    width: 15.875rem;
+  }
+}

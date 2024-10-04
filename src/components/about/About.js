@@ -10,35 +10,37 @@ const About = () => {
     <section className={styles.about}>
       <div className="container">
         <div className={styles.aboutContent}>
-          <h2 className={styles.title}>About Our Design Philosophy</h2>
+          <h2 className={styles.title}>About Our Design <br/>Philosophy</h2>
           <div className={styles.aboutInfo}>
-            <nav className={styles.navLinks}>
-              {navButtons.map((label, index) => (
-                <button
-                  key={index}
-                  className={`${styles.navButton} text-large`}
-                >
-                  {label}
-                </button>
-              ))}
-            </nav>
-            <article className={styles.textContent}>
-              <p className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
-                nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis
-                ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
-                Mauris massa. Vesti bcursus ante dapibus diam. u. Duis sagm
-                dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-                Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-                quis sem.
-              </p>
-              <Link to="about">
-                <button className={`${styles.learnMore} button-text`}>
-                  Learn More
-                </button>
-              </Link>
-            </article>
+            <div className={styles.aboutSlide}>
+              <nav className={styles.navLinks}>
+                {navButtons.map((label, index) => (
+                  <button
+                    key={index}
+                    className={`${styles.navButton} text-large`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </nav>
+              <article className={styles.textContent}>
+                <p className={styles.description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                  Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
+                  augue semper porta. Mauris massa. Vesti bcursus ante dapibus
+                  diam. u. Duis sagm dolor sit amet, consectetur adipiscing
+                  elit. Integer nec odio. Praesent libero. Sed cursus ante
+                  dapibus diam. Sed nisi. Nulla quis sem.
+                </p>
+                <Link to="about">
+                  <button className={`${styles.learnMore} button-text`}>
+                    Learn More
+                  </button>
+                </Link>
+              </article>
+            </div>
             <div className={styles.slideshow}>
               <div
                 className={styles.preview}

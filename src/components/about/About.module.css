@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 3.5rem;
   padding: 4rem 0;
+  justify-content: center;
 }
 
 .title {
@@ -19,6 +20,13 @@
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+}
+
+.aboutSlide{
+  display: flex;
+align-items: flex-start;
+gap: 2rem;
+flex: 1 0 0;
 }
 
 .navLinks {
@@ -83,4 +91,60 @@
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutInfo {
+    gap: 4rem;
+flex-direction: column;
+  }
+
+  .slideshow {
+    max-width: 26.5625rem;
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSlide{
+  flex-direction: column;
+  
+  }
+
+  .navLinks {
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 425px;
+    align-self: center;
+  }
+
+  .navButton {
+    width: 100%;
+    padding: 0.75rem .5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    border: 2px solid var(--surfaceNeutralColor);
+    background: var(--surfaceColor);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 0;
+  }
+
+  .slideButtons{
+    align-self: center;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  .title{
+    align-items: center;
+    text-align: center;
+  }
+.aboutContent {
+align-items: center;
+}
 }
