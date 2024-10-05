@@ -1,0 +1,8 @@
+.aboutSectionContent{
+  display: flex;
+padding: 4rem 0;
+flex-direction: column;
+align-items: flex-start;
+gap: 3.5rem;
+align-self: stretch;
+}

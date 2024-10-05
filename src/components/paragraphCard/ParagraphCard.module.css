@@ -1,0 +1,39 @@
+.paragraphContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+.subHeading {
+  font-style: italic;
+}
+
+.imageContainer {
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid var(--surfaceNeutralColor);
+  float: inline-end;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px){
+ .imageContainer{
+  float: none;
+  margin-left: 0;
+ }
+}
+
+@media screen and (max-width: 425px) {
+  
+}

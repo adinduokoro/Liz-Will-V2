@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from "./About.module.css"
-import { Header } from '../../components'
+import { AboutSection, Header } from '../../components'
 
 const About = () => {
   return (
-    <div>
+    <div className={styles.about}>
         <Header name={"About"}/>
+        <AboutSection />
     </div>
   )
 }

@@ -179,4 +179,17 @@ button {
     font-weight: 500;
     /* figure out what we need to do with this header */
   }
+
+  .text-large {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .text-regular {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
 }
