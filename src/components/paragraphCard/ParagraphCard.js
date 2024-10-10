@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ParagraphCard.module.css";
 
+
 const paragraphCard = ({ heading, subHeading, content, image }) => {
   return (
     <div className={styles.paragraphContent}>
