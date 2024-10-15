@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./Layout.module.css";
-import { Navigation, Footer } from "../../components";
+import { Navigation, Footer, Menu } from "../../components";
 import { Outlet, useLocation } from "react-router-dom";
 import { HeroBg, PageBg } from "../../assets/backgrounds";
 import video from "../../assets/hero-video.mp4";
-import aboutBg from "../../assets/backgrounds/about-background.jpg"
-import servicesBg from "../../assets/backgrounds/services-background.jpg"
-import portfolioBg from "../../assets/backgrounds/portfolio-background.jpg"
-import blogBg from "../../assets/backgrounds/blog-background.jpg"
+import aboutBg from "../../assets/backgrounds/about-background.jpg";
+import servicesBg from "../../assets/backgrounds/services-background.jpg";
+import portfolioBg from "../../assets/backgrounds/portfolio-background.jpg";
+import blogBg from "../../assets/backgrounds/blog-background.jpg";
 import contactBg from "../../assets/backgrounds/contact-background.jpg";
+
 
 const Layout = () => {
   const location = useLocation();
@@ -25,8 +26,8 @@ const Layout = () => {
         return <PageBg image={portfolioBg} />;
       case "/blog":
         return <PageBg image={blogBg} />;
-        case "/contact":
-          return <PageBg image={contactBg} />;
+      case "/contact":
+        return <PageBg image={contactBg} />;
       default:
         return null;
     }
@@ -34,6 +35,7 @@ const Layout = () => {
 
   return (
     <div className={styles.layout}>
+      <Menu />
       <div className={styles.background}>{renderBackground()}</div>
       <Navigation />
       <Outlet />
