@@ -9,6 +9,7 @@ const menuSlice = createSlice({
   initialState,
   reducers: {
     SET_MENU_TOGGLE(state, action) {
+      console.log(action.payload);
       state.isMenuOpen = action.payload
   }
   }

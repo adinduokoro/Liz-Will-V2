@@ -4,8 +4,18 @@ import { navItems } from "./data";
 import logo from "../../assets/logo-light.svg";
 import menuIcon from "../../assets/menuIcon.svg";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { selectIsMenuOpen, SET_MENU_TOGGLE } from "../../redux/slice/menuSlice";
 
 const Navigation = () => {
+  const dispatch = useDispatch()
+  const isMenuOpen = useSelector(selectIsMenuOpen)
+
+  const toggleMenu = () => {
+    dispatch(SET_MENU_TOGGLE(!isMenuOpen))
+  };
+
+
   return (
     <header className={styles.header}>
       <div className="container">
@@ -32,6 +42,7 @@ const Navigation = () => {
               loading="lazy"
               src={menuIcon}
               className={styles.menuIcon}
+              onClick={toggleMenu}
               alt=""
             />
           </button>

@@ -3,11 +3,21 @@ import styles from "./Menu.module.css";
 import symbol from "../../assets/symbol.svg";
 import closeIcon from "../../assets/close-icon.svg";
 import { icons, menuSocialIcons } from "./data";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { selectIsMenuOpen, SET_MENU_TOGGLE } from "../../redux/slice/menuSlice";
 
 const Menu = () => {
+  const dispatch = useDispatch();
+  const isMenuOpen = useSelector(selectIsMenuOpen);
+
+  const closeMenu = () => {
+    dispatch(SET_MENU_TOGGLE(false));
+  };
+
   return (
-    <div className={styles.menu}>
-      <div className={styles.closeContainer}>
+    <div className={`${styles.menu} ${isMenuOpen ? styles["active"] : ""}`}>
+      <div className={styles.closeContainer} onClick={closeMenu}>
         <img src={closeIcon} alt="" />
       </div>
       <div className={styles.menuContainer}>
