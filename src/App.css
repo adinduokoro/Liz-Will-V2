@@ -44,6 +44,10 @@ body {
   color: var(--surfaceNeutralColor);
 }
 
+.App {
+  min-height: 100vh;
+}
+
 
 .container {
   max-width: 70rem;

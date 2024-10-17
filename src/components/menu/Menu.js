@@ -1,24 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Menu.module.css";
 import symbol from "../../assets/symbol.svg";
-import closeIcon from "../../assets/close-icon.svg";
+import closeIcon from "../../assets/close-icon.js";
 import { icons, menuSocialIcons } from "./data";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { selectIsMenuOpen, SET_MENU_TOGGLE } from "../../redux/slice/menuSlice";
+import CloseIcon from "../../assets/close-icon.js";
 
 const Menu = () => {
+  const [color, setColor] = useState("var(--primaryColor)");
   const dispatch = useDispatch();
   const isMenuOpen = useSelector(selectIsMenuOpen);
+
+  const handleResize = () => {
+    if (window.innerWidth <= 896) {
+      setColor("var(--surfaceColor)");
+    } else {
+      setColor("var(--primaryColor)");
+    }
+  };
 
   const closeMenu = () => {
     dispatch(SET_MENU_TOGGLE(false));
   };
 
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className={`${styles.menu} ${isMenuOpen ? styles["active"] : ""}`}>
       <div className={styles.closeContainer} onClick={closeMenu}>
-        <img src={closeIcon} alt="" />
+        <CloseIcon color={color} />
       </div>
       <div className={styles.menuContainer}>
         <div className={styles.menuAbout}>
@@ -31,7 +50,11 @@ const Menu = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <button className="button-text primary-button">See Services</button>
+          <Link to="services">
+            <button className="button-text primary-button" onClick={closeMenu}>
+              See Services
+            </button>
+          </Link>
         </div>
         <div className={styles.menuContact}>
           <div className={styles.header}>
@@ -64,9 +87,14 @@ const Menu = () => {
             Lorem Ipsum is Lorem Ipsum is Lorem Ipsum is and typesetting
             industry the printing .
           </p>
-          <button className="button-text primary-button">Contact Us</button>
+          <Link to="contact">
+            <button className="button-text primary-button" onClick={closeMenu}>
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
+      <div className={styles.mobileMenuContainer}></div>
     </div>
   );
 };
