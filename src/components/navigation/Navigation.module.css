@@ -50,9 +50,12 @@
   gap: 0.625rem;
 }
 
-.menuIconContainer{
-  color: var(--surfaceColor);
+.hide {
+  visibility: hidden;
 }
+
+
+
 
 @media screen and (max-width: 896px) {
   .navLinks {

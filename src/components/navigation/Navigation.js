@@ -37,7 +37,7 @@ const Navigation = () => {
               </Link>
             ))}
           </nav>
-          <button className={styles.menuIconContainer} aria-label="Toggle menu">
+          <button className={`${styles.menuIconContainer} ${isMenuOpen ? styles.hide : ""}`} aria-label="Toggle menu">
             <img
               loading="lazy"
               src={menuIcon}

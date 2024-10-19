@@ -7,6 +7,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { selectIsMenuOpen, SET_MENU_TOGGLE } from "../../redux/slice/menuSlice";
 import CloseIcon from "../../assets/close-icon.js";
+import logo from "../../assets/logo-light.svg";
+import { navItems } from "../navigation/data.js";
+import starSymbol from "../../assets/star-symbol.svg";
 
 const Menu = () => {
   const [color, setColor] = useState("var(--primaryColor)");
@@ -42,7 +45,7 @@ const Menu = () => {
       <div className={styles.menuContainer}>
         <div className={styles.menuAbout}>
           <div className={styles.header}>
-            <img src={symbol} alt="" />
+            <img loading="lazy" src={symbol} alt="" />
             <h3>About Us</h3>
           </div>
           <div className={styles.imageContainer}>image</div>
@@ -94,7 +97,33 @@ const Menu = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.mobileMenuContainer}></div>
+      <div className={styles.mobileMenuContainer}>
+        <div className={styles.logoContainer}>
+          <img className={styles.logo} loading="lazy" src={logo} alt="" />
+        </div>
+        <div className={styles.menuNav}>
+          {navItems.map((link, index) => (
+            <div className={styles.link} key={index}>
+              <Link to={link.href} onClick={closeMenu}>
+                <span className="button-text">{link.text}</span>
+              </Link>
+              <img className="" src={starSymbol} alt="" />
+            </div>
+          ))}
+        </div>
+        <div className={styles.newsletter}>
+          <h3 className={styles.newsletterTitle}>Join Our Newsletter</h3>
+          <p className={styles.newsletterDesc}>
+            Stay ahead with the latest updates and exclusive offers{" "}
+          </p>
+          <form>
+            <input type="text" />
+            <button>
+              <img src="" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
