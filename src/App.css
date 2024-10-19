@@ -1,5 +1,6 @@
 /* Import */
 @font-face {
+  font-family: "Minister Book";
   font-family: var(--fontHeader);
   src: url("../public/font/Minister-Book.otf") format("opentype");
   font-weight: normal;

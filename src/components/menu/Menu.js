@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Menu.module.css";
 import symbol from "../../assets/symbol.svg";
-import closeIcon from "../../assets/close-icon.js";
 import { icons, menuSocialIcons } from "./data";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
