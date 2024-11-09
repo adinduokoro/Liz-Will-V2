@@ -1,0 +1,134 @@
+.portfolioSectionContent {
+  display: flex;
+  padding: 4rem 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.5rem;
+  align-self: stretch;
+}
+
+.portfolio {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, minmax(176px, 352px));
+  grid-template-rows: repeat(8, minmax(176px, 1fr));
+  grid-template-areas:
+    "item1 item1 item2"
+    "item1 item1 item3"
+    "item4 item6 item6"
+    "item5 item6 item6"
+    "item7 item7 item8"
+    "item7 item7 item9"
+    "item10 item12 item12"
+    "item11 item12 item12";
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10,
+.item11,
+.item12 {
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.item1 {
+  grid-area: item1;
+  background: #ffcc00;
+}
+
+.item2 {
+  grid-area: item2;
+  background-color: #ff6600; /* Example background color */
+}
+
+.item3 {
+  grid-area: item3;
+  background-color: #00ccff; /* Example background color */
+}
+
+.item4 {
+  grid-area: item4;
+  background-color: #66ff66; /* Example background color */
+}
+
+.item5 {
+  grid-area: item5;
+  background-color: #cc00cc; /* Example background color */
+}
+
+.item6 {
+  grid-area: item6;
+  background-color: #9900cc; /* Example background color */
+}
+
+.item7 {
+  grid-area: item7;
+  background-color: #ff6666; /* Example background color */
+}
+
+.item8 {
+  grid-area: item8;
+  background-color: #6699ff; /* Example background color */
+}
+
+.item9 {
+  grid-area: item9;
+  background-color: #99ff99; /* Example background color */
+}
+
+.item10 {
+  grid-area: item10;
+  background-color: #ff9966; /* Example background color */
+}
+
+.item11 {
+  grid-area: item11;
+  background-color: #66cccc; /* Example background color */
+}
+
+.item12 {
+  grid-area: item12;
+  background-color: #ffccff; /* Example background color */
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    grid-template-columns: repeat(2, minmax(100px, 400px));
+    grid-template-rows: repeat(6, minmax(100px, 1fr));
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8"
+      "item9 item10"
+      "item11 item12";
+  }
+}
+
+@media (max-width: 430px) {
+  .portfolio {
+    grid-template-columns: repeat(1, minmax(100px, 400px));
+    grid-template-rows: repeat(6, minmax(100px, 1fr));
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8"
+      "item9"
+      "item10"
+      "item11"
+      "item12";
+  }
+}

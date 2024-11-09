@@ -1,6 +1,6 @@
 .menu {
   background-color: white;
-  z-index: 10;
+  z-index: 100;
   position: fixed;
   width: 28rem;
   height: 100vh;

@@ -5,7 +5,7 @@ import { Header } from '../../components'
 const Services = () => {
   return (
     <div>
-        <Header name={"Service"}/>
+        <Header name={"Services"}/>
     </div>
   )
 }
