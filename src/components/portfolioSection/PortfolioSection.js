@@ -7,7 +7,7 @@ const PortfolioSection = () => {
       <div className="container">
         <div className={styles.portfolioSectionContent}>
           <div className={styles.header}>
-            <h2>Portfolio</h2>
+            <h2>Featured Work</h2>
             <p>
               Each project showcases our dedication to quality and precise
               attention to detail.
