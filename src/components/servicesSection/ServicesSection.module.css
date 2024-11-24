@@ -86,10 +86,6 @@ margin: .5rem 0;
     column-gap: 2rem;
     row-gap: 3rem;
   }
-
-  .description{
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 596px) {
