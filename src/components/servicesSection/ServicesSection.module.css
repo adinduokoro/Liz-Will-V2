@@ -7,13 +7,107 @@
   align-self: stretch;
 }
 
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 2rem;
+}
+
+.headerContent p {
+  max-width: 34rem;
+}
+
+.headerContent button {
+  padding: 1.5rem 3rem;
+}
+
 .services {
   display: grid;
-  grid-template-columns: ;
+  grid-template-columns: repeat(3, 1fr); /* Default 3 equal columns */
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+
+.description{
+  margin: 0 1rem;
+}
+
+.card, .ctaCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .image {
   height: 6rem;
-  width: 22rem;
+  max-width: 22rem;
   background-color: lightgray;
+  width: 100%;
+}
+
+.ctaCard{
+  margin: auto 0;
+  text-align: center;
+}
+
+.lineBreak {
+  width: 6rem;
+height: 0.0625rem;
+background: #000;
+margin: .5rem 0;
+}
+
+@media screen and (max-width: 768px){
+  .headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .headerContent p {
+    max-width: 100%;
+  }
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default 3 equal columns */
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+
+  .description{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default 3 equal columns */
+    column-gap: 2rem;
+    row-gap: 3rem;
+    width: 100%;
+
+  }
+  
+  
+.image{
+  max-width: 100%;
+}
+
+.ctaCard p{
+  max-width: 22rem;
+}
 }

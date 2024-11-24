@@ -17,7 +17,7 @@ const About = () => {
                 {navButtons.map((label, index) => (
                   <button
                     key={index}
-                    className={`${styles.navButton} text-large`}
+                    className={`${styles.navButton} button-text`}
                   >
                     {label}
                   </button>

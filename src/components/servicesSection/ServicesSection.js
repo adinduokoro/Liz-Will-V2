@@ -17,7 +17,9 @@ const ServicesSection = () => {
                 highest quality of service and knowledge. Here are some of our
                 many services:
               </p>
-              <button>GET AN ESTIMATE</button>
+              <button className={`secondary-button button-text`}>
+                GET AN ESTIMATE
+              </button>
             </div>
           </div>
           <div className={styles.services}>
@@ -25,7 +27,7 @@ const ServicesSection = () => {
               <div className={styles.card} key={index}>
                 <h4>{card.heading}</h4>
                 <div className={styles.image}>{card.image}</div>
-                <p>{card.paragraph}</p>
+                <p className={styles.description}>{card.paragraph}</p>
               </div>
             ))}
             <div className={styles.ctaCard}>
@@ -35,8 +37,10 @@ const ServicesSection = () => {
                 with someone who can.
               </p>
               <hr className={styles.lineBreak} />
-              <p>443-218-3344</p>
-              <p className={styles.email}>lizwilldesign@gmail.com</p>
+              <div>
+                <p>443-218-3344</p>
+                <p className={styles.email}>lizwilldesign@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
