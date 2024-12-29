@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from "./Blog.module.css"
-import { Header } from '../../components'
+import { Header, BlogSection } from '../../components'
 
 const Blog = () => {
   return (
-    <div>
+    <div className={styles.blog}>
         <Header name={"Blog"}/>
+        <BlogSection />
     </div>
   )
 }

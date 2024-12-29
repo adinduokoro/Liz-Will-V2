@@ -14,6 +14,7 @@ export { default as AboutSection } from "./aboutSection/AboutSection";
 export { default as ParagraphCard } from "./paragraphCard/ParagraphCard";
 export { default as ServicesSection } from "./servicesSection/ServicesSection";
 export { default as PortfolioSection } from "./portfolioSection/PortfolioSection";
+export { default as BlogSection } from "./blogSection/BlogSection";
 export { default as ContactSection } from "./contactSection/ContactSection";
 export { default as ContactForm } from "./contactForm/ContactForm";
 export { default as Footer } from "./footer/Footer";
