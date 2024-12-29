@@ -12,13 +12,13 @@
   display: flex;
   width: 22rem;
   height: 28.3125rem;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: var(--surfaceDimColor);
   border-radius: 1rem;
   justify-content: space-between;
+  border: 2px solid black;
 }
 
 .heading {
@@ -27,14 +27,14 @@
 }
 
 .date {
-  color: var(--surfaceColor);
+  color: var(--surfaceShadeColor);
   font-size: 0.75rem;
   line-height: 1.5rem; /* 200% */
   margin-bottom: 1rem;
 }
 
 .content {
-  color: var(--surfaceShadeColor);
+  color: var(--surfaceNeutralColor);
 }
 
 .post button {
@@ -48,6 +48,6 @@
 }
 
 .post button p {
-  color: var(--Surface, #fff);
+  color: var(--surfaceColor);
   font-size: 1rem;
 }
