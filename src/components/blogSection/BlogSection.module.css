@@ -1,11 +1,16 @@
 .blogSectionContent {
-  display: grid;
+  display: flex;
   padding: 4rem 0;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
+  align-items: center;
+  gap: 4rem;
   align-self: stretch;
+}
+
+.gridContainer {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .post {
@@ -50,4 +55,54 @@
 .post button p {
   color: var(--surfaceColor);
   font-size: 1rem;
+}
+
+.paginationContainer {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationContainer button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.paginationContainer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationContainer .active {
+  font-weight: bold;
+  color: var(--surfaceColor);
+  background-color: var(--primaryColor);
+  border-color: var(--surfaceShadeColor);
+}
+
+.paginationContainer span {
+  padding: 5px 10px;
+  color: #888;
+}
+
+@media screen and (max-width: 1232px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post {
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
 }
