@@ -9,11 +9,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route index path="about" element={<About />} />
-          <Route index path="services" element={<Services />} />
-          <Route index path="portfolio" element={<Portfolio />} />
-          <Route index path="blog" element={<Blog />} />
-          <Route index path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </div>
