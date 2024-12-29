@@ -3,4 +3,5 @@ export { default as About } from "../pages/about/About";
 export { default as Services } from "../pages/services/Services";
 export { default as Portfolio } from "../pages/portfolio/Portfolio";
 export { default as Blog } from "../pages/blog/Blog";
+export { default as BlogPost } from "../pages/blogPost/BlogPost";
 export { default as Contact } from "../pages/contact/Contact";

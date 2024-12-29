@@ -1,6 +1,7 @@
 export const posts = [
   {
-    heading: "TOP HOME MAINTENANCE TIPS FOR HOMEOWNERS",
+    id: "1",
+    heading: "Top Home Maintenance Tips for Homeowners",
     date: "November 24, 2024",
     contentSnippet: (
       <p>
@@ -12,7 +13,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "5 WINTER MAINTENANCE TIPS FOR YOUR HOME",
+    id: "2",
+    heading: "5 Winter Maintenance Tips for Your Home",
     date: "December 1, 2024",
     contentSnippet: (
       <p>
@@ -23,7 +25,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "SPRING CLEANING TIPS FOR A FRESH START",
+    id: "3",
+    heading: "Spring Cleaning Tips for a Fresh Start",
     date: "December 8, 2024",
     contentSnippet: (
       <p>
@@ -34,7 +37,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "SHOULD YOU REPAIR OR REPLACE APPLIANCES?",
+    id: "4",
+    heading: "Should You Repair or Replace Appliances?",
     date: "December 15, 2024",
     contentSnippet: (
       <p>
@@ -45,7 +49,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "EASY PLUMBING FIXES YOU CAN DO YOURSELF",
+    id: "5",
+    heading: "Easy Plumbing Fixes You Can Do Yourself",
     date: "December 22, 2024",
     contentSnippet: (
       <p>
@@ -56,7 +61,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "LANDSCAPING TIPS TO IMPROVE CURB APPEAL",
+    id: "6",
+    heading: "Landscaping Tips to Improve Curb Appeal",
     date: "December 29, 2024",
     contentSnippet: (
       <p>
@@ -67,7 +73,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "SIGNS YOUR HOME NEEDS AN ELECTRICAL UPGRADE",
+    id: "7",
+    heading: "Signs Your Home Needs an Electrical Upgrade",
     date: "January 5, 2025",
     contentSnippet: (
       <p>
@@ -78,7 +85,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "ENERGY-SAVING UPGRADES FOR YOUR HOME",
+    id: "8",
+    heading: "Energy-Saving Upgrades for Your Home",
     date: "January 12, 2025",
     contentSnippet: (
       <p>
@@ -89,7 +97,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "KEEP YOUR ROOF IN TOP SHAPE ALL YEAR",
+    id: "9",
+    heading: "Keep Your Roof in Top Shape All Year",
     date: "January 19, 2025",
     contentSnippet: (
       <p>
@@ -100,7 +109,8 @@ export const posts = [
     content: "",
   },
   {
-    heading: "HOW TO HIRE THE RIGHT CONTRACTOR",
+    id: "10",
+    heading: "How to Hire the Right Contractor",
     date: "January 26, 2025",
     contentSnippet: (
       <p>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./BlogSection.module.css";
 import { posts } from "./data";
+import { Link } from "react-router-dom";
 
 const BlogSection = () => {
   const POSTS_PER_PAGE = 6; // 3x2 grid
@@ -8,9 +9,11 @@ const BlogSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const paginatePosts = () => {
+    // Sort posts by date in descending order
+    const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
     const start = (currentPage - 1) * POSTS_PER_PAGE;
     const end = start + POSTS_PER_PAGE;
-    return posts.slice(start, end);
+    return sortedPosts.slice(start, end);
   };
 
   const handlePageChange = (page) => {
@@ -134,9 +137,11 @@ const BlogSection = () => {
                   </p>
                 </div>
                 <div>
-                  <button>
-                    <p>Read Full Post</p>
-                  </button>
+                  <Link to={`/blog/${post.id}`}>
+                    <button>
+                      <p>Read Full Post</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}

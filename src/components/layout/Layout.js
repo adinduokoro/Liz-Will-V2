@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Layout.module.css";
 import { Navigation, Footer, Menu } from "../../components";
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation, useMatch } from "react-router-dom";
 import { HeroBg, PageBg } from "../../assets/backgrounds";
 import video from "../../assets/hero-video.mp4";
 import aboutBg from "../../assets/backgrounds/about-background.jpg";
@@ -13,6 +13,8 @@ import contactBg from "../../assets/backgrounds/contact-background.jpg";
 
 const Layout = () => {
   const location = useLocation();
+  const isBlogPost = useMatch("/blog/:id"); // Check if the current route matches "/blog/:id"
+
 
   const renderBackground = () => {
     switch (location.pathname) {
@@ -29,6 +31,9 @@ const Layout = () => {
       case "/contact":
         return <PageBg image={contactBg} />;
       default:
+        if (isBlogPost) {
+          return <PageBg image={blogBg} />;
+        }
         return null;
     }
   };

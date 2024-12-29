@@ -97,6 +97,10 @@ margin: .5rem 0;
     width: 100%;
 
   }
+
+  .headerContent button {
+    display: none;
+  }
   
   
 .image{

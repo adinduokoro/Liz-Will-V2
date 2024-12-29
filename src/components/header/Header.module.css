@@ -5,6 +5,11 @@
   align-items: center;
   align-self: stretch;
   color: var(--surfaceColor);
+  padding: 2rem;
+}
+
+.header h2{
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 1024px) {
